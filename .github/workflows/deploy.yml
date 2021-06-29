@@ -35,6 +35,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
       
+      # 단위 테스트 스텝
+      - name: Test unit
+        run: yarn test:unit
+        
       - name: Build page
         run: yarn build
         env:
